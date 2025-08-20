@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>板跃征途 - 板球活动专业平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-cricket"></i>
+                <span>板跃征途</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#activities">活动预案</a></li>
+                <li><a href="#current">当前活动</a></li>
+                <li><a href="#shop">文创商城</a></li>
+                <li><a href="#about">关于我们</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页轮播图 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>板跃征途</h1>
+            <p>专业的板球活动平台，让每一次挥棒都成为精彩回忆</p>
+            <a href="#current" class="cta-button">立即报名</a>
+        </div>
+        <div class="hero-slider">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=800&h=600&fit=crop" alt="板球比赛">
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop" alt="板球训练">
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop" alt="板球团队">
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- 活动预案 -->
+    <section id="activities" class="activities">
+        <div class="container">
+            <h2>历年活动预案</h2>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-image">
+                        <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=400&h=300&fit=crop" alt="春季联赛">
+                    </div>
+                    <div class="activity-content">
+                        <h3>2024年春季板球联赛</h3>
+                        <p class="activity-date"><i class="fas fa-calendar"></i> 2024年3月-5月</p>
+                        <p class="activity-location"><i class="fas fa-map-marker-alt"></i> 市体育中心</p>
+                        <p class="activity-description">
+                            春季联赛是每年最重要的板球赛事之一，采用循环赛制，共有12支队伍参赛。
+                            比赛分为小组赛和淘汰赛两个阶段，最终决出冠亚季军。
+                        </p>
+                        <div class="activity-stats">
+                            <span><i class="fas fa-users"></i> 12支队伍</span>
+                            <span><i class="fas fa-trophy"></i> 循环赛制</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="青少年训练营">
+                    </div>
+                    <div class="activity-content">
+                        <h3>2023年青少年板球训练营</h3>
+                        <p class="activity-date"><i class="fas fa-calendar"></i> 2023年7月-8月</p>
+                        <p class="activity-location"><i class="fas fa-map-marker-alt"></i> 市青少年活动中心</p>
+                        <p class="activity-description">
+                            为期一个月的青少年板球训练营，面向8-16岁青少年。
+                            课程包括基础技能训练、战术讲解、体能训练等，培养未来的板球之星。
+                        </p>
+                        <div class="activity-stats">
+                            <span><i class="fas fa-users"></i> 50名学员</span>
+                            <span><i class="fas fa-clock"></i> 30天</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop" alt="友谊赛">
+                    </div>
+                    <div class="activity-content">
+                        <h3>2023年城市友谊赛</h3>
+                        <p class="activity-date"><i class="fas fa-calendar"></i> 2023年10月</p>
+                        <p class="activity-location"><i class="fas fa-map-marker-alt"></i> 多个城市轮流举办</p>
+                        <p class="activity-description">
+                            与周边城市举办的友谊赛，促进城市间板球文化交流。
+                            采用单淘汰制，每场比赛都充满激情与友谊。
+                        </p>
+                        <div class="activity-stats">
+                            <span><i class="fas fa-users"></i> 8个城市</span>
+                            <span><i class="fas fa-handshake"></i> 友谊赛制</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 当前可报名活动 -->
+    <section id="current" class="current-activities">
+        <div class="container">
+            <h2>当前可报名活动</h2>
+            <div class="current-activities-grid">
+                <div class="current-activity-card">
+                    <div class="activity-header">
+                        <h3>2024年夏季板球挑战赛</h3>
+                        <span class="status active">报名中</span>
+                    </div>
+                    <div class="activity-details">
+                        <p><i class="fas fa-calendar"></i> 比赛时间：2024年6月15日-7月20日</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 比赛地点：市体育中心板球场</p>
+                        <p><i class="fas fa-users"></i> 参赛人数：16支队伍（每队15人）</p>
+                        <p><i class="fas fa-trophy"></i> 奖金设置：冠军5000元，亚军3000元，季军1000元</p>
+                        <p><i class="fas fa-clock"></i> 报名截止：2024年5月31日</p>
+                    </div>
+                    <button class="register-btn" onclick="openRegistration('夏季板球挑战赛')">立即报名</button>
+                </div>
+
+                <div class="current-activity-card">
+                    <div class="activity-header">
+                        <h3>板球技能提升训练营</h3>
+                        <span class="status active">报名中</span>
+                    </div>
+                    <div class="activity-details">
+                        <p><i class="fas fa-calendar"></i> 训练时间：2024年5月1日-5月31日</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 训练地点：市板球训练基地</p>
+                        <p><i class="fas fa-users"></i> 招生人数：30人</p>
+                        <p><i class="fas fa-graduation-cap"></i> 课程内容：击球技巧、投球技术、战术分析</p>
+                        <p><i class="fas fa-clock"></i> 报名截止：2024年4月25日</p>
+                    </div>
+                    <button class="register-btn" onclick="openRegistration('板球技能提升训练营')">立即报名</button>
+                </div>
+
+                <div class="current-activity-card">
+                    <div class="activity-header">
+                        <h3>板球爱好者交流赛</h3>
+                        <span class="status active">报名中</span>
+                    </div>
+                    <div class="activity-details">
+                        <p><i class="fas fa-calendar"></i> 比赛时间：2024年4月20日</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 比赛地点：市公园板球场</p>
+                        <p><i class="fas fa-users"></i> 参赛人数：不限</p>
+                        <p><i class="fas fa-heart"></i> 活动特色：免费参与，重在交流</p>
+                        <p><i class="fas fa-clock"></i> 报名截止：2024年4月18日</p>
+                    </div>
+                    <button class="register-btn" onclick="openRegistration('板球爱好者交流赛')">立即报名</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 文创商城 -->
+    <section id="shop" class="shop">
+        <div class="container">
+            <h2>板球文创商城</h2>
+            <div class="shop-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop" alt="板球球衣">
+                    </div>
+                    <div class="product-info">
+                        <h3>专业板球球衣</h3>
+                        <p class="product-description">采用透气面料，专业设计，适合比赛和训练使用</p>
+                        <div class="product-price">
+                            <span class="price">¥299</span>
+                            <span class="original-price">¥399</span>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('专业板球球衣', 299)">
+                            <i class="fas fa-shopping-cart"></i> 加入购物车
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=300&h=300&fit=crop" alt="板球球棒">
+                    </div>
+                    <div class="product-info">
+                        <h3>专业板球球棒</h3>
+                        <p class="product-description">优质木材制作，手感舒适，击球有力</p>
+                        <div class="product-price">
+                            <span class="price">¥599</span>
+                            <span class="original-price">¥699</span>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('专业板球球棒', 599)">
+                            <i class="fas fa-shopping-cart"></i> 加入购物车
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=300&fit=crop" alt="板球护具">
+                    </div>
+                    <div class="product-info">
+                        <h3>板球护具套装</h3>
+                        <p class="product-description">包含护腿、护胸、护手等，安全防护，比赛必备</p>
+                        <div class="product-price">
+                            <span class="price">¥199</span>
+                            <span class="original-price">¥249</span>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('板球护具套装', 199)">
+                            <i class="fas fa-shopping-cart"></i> 加入购物车
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop" alt="板球纪念品">
+                    </div>
+                    <div class="product-info">
+                        <h3>板球纪念徽章</h3>
+                        <p class="product-description">精美设计的板球主题徽章，收藏价值高</p>
+                        <div class="product-price">
+                            <span class="price">¥29</span>
+                            <span class="original-price">¥39</span>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('板球纪念徽章', 29)">
+                            <i class="fas fa-shopping-cart"></i> 加入购物车
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>关于板跃征途</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>板跃征途是专业的板球活动平台，致力于推广板球运动，为板球爱好者提供优质的活动体验。</p>
+                    <p>我们拥有丰富的活动组织经验，专业的教练团队，以及完善的配套设施。</p>
+                    <div class="contact-info">
+                        <h3>联系我们</h3>
+                        <p><i class="fas fa-phone"></i> 电话：400-123-4567</p>
+                        <p><i class="fas fa-envelope"></i> 邮箱：info@cricket-journey.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 地址：市体育中心板球馆</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop" alt="关于我们">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>板跃征途</h3>
+                    <p>专业的板球活动平台</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="#activities">活动预案</a></li>
+                        <li><a href="#current">当前活动</a></li>
+                        <li><a href="#shop">文创商城</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <p>电话：400-123-4567</p>
+                    <p>邮箱：info@cricket-journey.com</p>
+                    <p>地址：市体育中心板球馆</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 板跃征途. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 报名弹窗 -->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRegistration()">&times;</span>
+            <h2>活动报名</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="activityName">活动名称</label>
+                    <input type="text" id="activityName" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="participantName">姓名 *</label>
+                    <input type="text" id="participantName" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">电话号码 *</label>
+                    <input type="tel" id="phoneNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">邮箱</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="age">年龄</label>
+                    <input type="number" id="age" min="8" max="80">
+                </div>
+                <div class="form-group">
+                    <label for="experience">板球经验</label>
+                    <select id="experience">
+                        <option value="">请选择</option>
+                        <option value="beginner">初学者</option>
+                        <option value="intermediate">有一定基础</option>
+                        <option value="advanced">经验丰富</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">提交报名</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 购物车弹窗 -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>购物车</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <strong>总计: ¥<span id="cartTotal">0</span></strong>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">结算</button>
+        </div>
+    </div>
+
+    <!-- 购物车图标 -->
+    <div class="cart-icon" onclick="openCart()">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cartCount">0</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
